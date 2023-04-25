@@ -1,0 +1,42 @@
+#box-contact {
+  @extend .--bg__bg-green;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box-contact__main {
+  color: $white;
+  margin: 65px 0;
+  text-align: center;
+
+  h3 {
+    @extend .--font__bai-jamjuree;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  li {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      height: 25px;
+      width: 25px;
+      margin: 10px 18px 0 0;
+      background-size: contain;
+    }
+
+    &:last-child {
+      i {
+        margin-top: 0;
+      }
+    }
+
+    span {
+      @extend .--font__iria-sans;
+      font-size: 3rem;
+    }
+  }
+}

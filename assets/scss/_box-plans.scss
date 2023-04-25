@@ -1,0 +1,76 @@
+#box-plans {
+  background-image: url(../../public/images/bg-plans.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-plans__main {
+  margin-left: 120px;
+  margin-top: 53px;
+  padding-bottom: 135px;
+
+  h4 {
+    @extend .--font__bai-jamjuree;
+    font-size: 2.6rem;
+    font-weight: 300;
+    margin: 5px 0 20px;
+
+    span {
+      color: $green-02;
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 500;
+      margin-left: 10px;
+    }
+  }
+
+  h5 {
+    @extend .--font__bai-jamjuree;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+    width: 500px;
+  }
+
+  hr {
+    @extend .--hr-01;
+  }
+
+  ul.plans {
+    display: flex;
+    margin-top: 55px;
+    gap: 0 40px;
+
+    > li {
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      width: 350px;
+
+      &.dark {
+        background: linear-gradient(108.74deg, #a7a9ab 0%, #21262a 24.74%);
+        color: $white;
+      }
+    }
+  }
+
+  li {
+    font-size: 1.1rem;
+    line-height: 2rem;
+
+    &.dark {
+    }
+  }
+
+  button {
+    @extend .--button__green-01;
+    font-size: 1.4rem;
+    padding: 7px 35px;
+    margin-top: 23px;
+  }
+}

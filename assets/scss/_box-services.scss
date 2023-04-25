@@ -1,0 +1,97 @@
+#box-services {
+}
+
+.box-services__main {
+  background: radial-gradient(circle, #30a46c 0%, #000 77%);
+  background-color: #000;
+  color: $white;
+  padding-top: 190px;
+  padding-bottom: 150px;
+
+  h2 {
+    display: block;
+    text-align: center;
+    margin-top: 0;
+
+    i {
+      background-image: url(../../public/images/logo-white.svg);
+      background-size: 150px;
+      background-repeat: no-repeat;
+      display: block;
+      height: 90px;
+      margin: 0 auto;
+      text-indent: -900em;
+      width: 35px;
+    }
+
+    span {
+      @extend .--font__bai-jamjuree;
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 400;
+      margin-top: 20px;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    min-height: 450px;
+    width: 320px;
+  }
+
+  h4 {
+    @extend .--font__bai-jamjuree;
+    font-size: 2rem;
+    margin: 25px 0 0 30px;
+    font-weight: 400;
+  }
+
+  p {
+    margin-left: 30px;
+    max-width: 250px;
+    font-size: 1.11rem;
+  }
+
+  button {
+    @extend .--button__green-01;
+    margin-top: auto;
+    margin-left: 30px;
+    padding: 5px 30px;
+    width: fit-content;
+    display: inline-block;
+  }
+
+  .services-img {
+    display: block;
+    background-size: contain;
+    border-radius: 50%;
+    height: 260px;
+    margin: 0 auto;
+    outline-offset: 6px;
+    outline: 2px solid $green-01;
+    width: 270px;
+
+    &.payout {
+      background-image: url("../../public/images/img_servico-1.jpg");
+    }
+
+    &.charge {
+      background-image: url("../../public/images/img_servico-2.jpg");
+    }
+
+    &.validation {
+      background-image: url("../../public/images/img_servico-3.jpg");
+    }
+
+    &.conciliation {
+      background-image: url("../../public/images/img_servico-4.jpg");
+    }
+  }
+}

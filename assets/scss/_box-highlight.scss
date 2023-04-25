@@ -1,0 +1,67 @@
+#box-highlight {
+  @extend .--bg__slide-01;
+  background-size: contain;
+  min-height: 890px;
+  margin: 0 auto;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.box-highlight__main {
+  display: block;
+  height: 380px;
+  margin-left: 120px;
+  margin-top: 270px;
+  width: 480px;
+
+  h2 {
+    @extend .--font__bai-jamjuree;
+    font-size: 4.12rem;
+
+    span {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+  }
+
+  p {
+    font-size: 1.6rem;
+    max-width: 400px;
+  }
+
+  hr {
+    @extend .--hr-01;
+  }
+
+  button {
+    @extend .--button__green-01;
+    padding: 7px 40px;
+    font-size: 1.4rem;
+  }
+  
+}
+
+.box-highlight__pagination {
+  display: flex;
+  margin-top: 25px;
+
+  a {
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: $grey-01;
+    margin-right: 9px;
+
+    &.active {
+      background-color: $green-02;
+      pointer-events: none;
+    }
+
+    &:hover {
+      background-color: $grey-03;
+    }
+  }
+}
