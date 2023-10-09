@@ -1,6 +1,6 @@
 # directories
 /node_modules
 /docs
-
+/assets
 # misc
 .DS_Store
